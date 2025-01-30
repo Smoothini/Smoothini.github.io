@@ -1,5 +1,6 @@
 ---
 title: Tech Stuff
+layout: page
 has_children: true
 ---
 
