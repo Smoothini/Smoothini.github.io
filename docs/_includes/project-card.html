@@ -1,0 +1,78 @@
+<style>
+  .project-card {
+    font-family: monospace, Consolas, "Courier New", monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: 2px solid #007acc;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+  }
+
+  .project-card h3 {
+    margin-top: 1rem;
+    color: #569cd6;
+    font-weight: bold;
+    border-bottom: 1px solid #007acc;
+    padding-bottom: 0.25rem;
+  }
+
+  .project-card a {
+    color: #9cdcfe;
+    text-decoration: underline;
+  }
+</style>
+
+<div class="project-card">
+  <h3>😒 Problem:</h3>
+  <p>{{ include.problem | markdownify }}</p>
+
+  <h3>🤑 Solution:</h3>
+  <p>{{ include.solution | markdownify }}</p>
+
+
+  <h3>🔢 Source:</h3>
+  <p> ✨✨✨
+    {% if include.source_url %}
+      <a href="{{ include.source_url }}" target="_blank" rel="noopener noreferrer">{{ include.source_text | default: "GitHub Repository" }}</a>
+    {% else %}
+      <em>No source URL provided</em>
+    {% endif %} ✨✨✨
+  </p>
+
+  {% if include.source_readme %}
+    <h3>📚 README ⤵⤵⤵</h3>
+    <div id="{{ include.source_readme | replace:'/','-' }}-readme" data-repo="{{ include.source_readme }}" style="background:#252526; padding:1rem; border-radius:6px; overflow:auto;">
+      <p><em>Loading README…</em></p>
+    </div>
+  {% endif %}
+
+</div>
+
+<hr>
+
+<style>
+  p.tags {
+    margin-top: 0.5rem;
+  }
+
+  span.tag {
+    background-color: #007acc;
+    color: white;
+    border-radius: 3px;
+    padding: 0.15rem 0.4rem;
+    margin-right: 0.3rem;
+    font-size: 0.85rem;
+    font-family: monospace;
+  }
+</style>
+
+{% if page.tags %}
+  <p class="tags">
+    🔖 Tags:
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+{% endif %}
