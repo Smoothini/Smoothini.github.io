@@ -30,7 +30,7 @@ Parametric designs I made, almost all of them in [OpenSCAD](https://openscad.org
 Tech logs, thoughts, how-tos, and whatever I feel like writing about. Maybe also insights on projects I didn't directly contribute to.
 
 ### [🛠️ Other](/other/)
-Things that don’t fit elsewhere — calculators, notes, and utilities.
+Things that don’t fit elsewhere - calculators, notes, and utilities.
 
 <!--
 ## 📌 Useful Pages
