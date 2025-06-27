@@ -1,0 +1,26 @@
+<hr>
+
+<style>
+  p.tags {
+    margin-top: 0.5rem;
+  }
+
+  span.tag {
+    background-color: #007acc;
+    color: white;
+    border-radius: 3px;
+    padding: 0.15rem 0.4rem;
+    margin-right: 0.3rem;
+    font-size: 0.85rem;
+    font-family: monospace;
+  }
+</style>
+
+{% if page.tags %}
+  <p class="tags">
+    🔖 Tags:
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+{% endif %}
