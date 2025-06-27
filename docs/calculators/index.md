@@ -1,8 +1,7 @@
 ---
 title: Calculators and utilities
-nav_order: 1
+nav_order: 4
 layout: page
-parent: Other stuff
 has_children: true
 ---
 

@@ -1,5 +1,5 @@
 <style>
-  p.blog-info {
+  p.info {
     font-size: 0.85rem;
     font-family: monospace;
   }
@@ -9,22 +9,29 @@
 
 
 {% if page.date %}
-<p class="blog-info">
+<p class="info">
   📅 Published on: <b>{{ page.date | date: "%B %d, %Y" }}</b>
 </p>
 {% endif %}
 
 
 {% if page.modified %}
-<p class="blog-info">
+<p class="info">
   📝 Modified on: <b>{{ page.modified | date: "%B %d, %Y" }}</b>
 </p>
 {% endif %}
 
 
 {% if page.subject %}
-<p class="blog-info">
+<p class="info">
   🧐 Subject: <b>{{ page.subject }}</b>
+</p>
+{% endif %}
+
+
+{% if page.source %}
+<p class="info">
+  💿 Source: <b><a href="{{ page.source }}">{{ page.source }}</a></b>
 </p>
 {% endif %}
 
