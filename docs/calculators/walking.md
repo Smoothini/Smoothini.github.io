@@ -2,9 +2,11 @@
 title: Walking calculator
 layout: page
 parent: Calculators and utilities
-tags: [calculator, sport]
-date_start: 23-05-2025
+tags: [calculator, training, walking]
+date: 23-05-2025
 ---
+{% include top-card.html %}
+
 
 I walk a lot and sometimes I just need an extra few thousands steps, but its always a pain to find a good calculator, so I just made my own. Might add support for imperial units at some point.
 
@@ -62,3 +64,4 @@ I walk a lot and sometimes I just need an extra few thousands steps, but its alw
   <p id="resultOutput" style="margin-top: 1em; font-weight: bold;"></p>
 </div>
 
+{% include tags.html %}
