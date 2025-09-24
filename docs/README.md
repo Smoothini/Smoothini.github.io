@@ -1,4 +1,6 @@
-# running
+# running locally
+
+Quite a few steps before this point from what I recall, but once setup, use the following:
 
 `alias jserve="bundle exec jekyll serve --livereload --force_polling"`
 `jserve`
