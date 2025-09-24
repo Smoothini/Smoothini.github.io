@@ -22,8 +22,10 @@ I don't sell any of the designs I make, and if it's a bigger piece for a friend,
     <input type="radio" name="complexity" value="advanced" onchange="swap()"> Advanced
 </label>
 <label style="margin-left: 20px;">
-    <input type="radio" name="complexity" value="professional" onchange="swap()"> Professional - NOT IMPLEMENTED WIP
+    <input type="radio" name="complexity" value="professional" onchange="swap()"> Professional (WIP)
 </label>
+
+<span class="profi" hidden color="red">NOTE! The professional mode is still Work in Progress!</span>
 
 <span>Spool Cost</span>
 <input type="text" id="spoolcost" value="350">
