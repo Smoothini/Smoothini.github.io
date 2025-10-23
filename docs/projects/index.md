@@ -11,3 +11,7 @@ has_children: true
 - 🔧 [Hardware projects](hardware)
 - 📐 [CAD projects](cad)
 - 🧷 [Other stuff](other)
+
+
+
+{% include tags.html %}

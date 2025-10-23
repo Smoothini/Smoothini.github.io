@@ -37,3 +37,7 @@ Useful resources and various cheatsheets.
 - [Setup Notes](/notes/setup/)
 - [My Resume](/resume/) *(optional)*
 -->
+
+
+<script data-goatcounter="https://smoothini.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

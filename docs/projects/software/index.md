@@ -9,3 +9,6 @@ has_children: true
 # Software projects
 
 Most of the stuff I keep public are tools written in python for oddly specific tasks!
+
+
+{% include tags.html %}

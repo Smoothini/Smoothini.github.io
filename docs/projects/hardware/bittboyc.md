@@ -17,3 +17,6 @@ My issue was since it was somewhat an older console, it had a micro usb charging
 I used my hotplate to remove the old port, and then I started soldering the new one. Only issue was, when all was set and done, and epoxy applyed, it occured to me I had placed the new port in a way which didn't allow for the backplate to be re-assembled. After some elbow grease and a few broken pads (luckily data ones which I didn't need), I managed to put it all back together, and I ended up with a functional type c charging port!
 
 If I can find some pictures I will add em as I no longer have that phone.
+
+
+{% include tags.html %}

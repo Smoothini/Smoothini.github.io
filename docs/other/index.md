@@ -6,3 +6,6 @@ has_children: true
 ---
 
 # ╮（╯＿╰）╭
+
+
+{% include tags.html %}

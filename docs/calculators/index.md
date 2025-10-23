@@ -6,3 +6,6 @@ has_children: true
 ---
 
 # On the fly calculators and utilities
+
+
+{% include tags.html %}

@@ -16,3 +16,6 @@ has_children: true
     {% endif %}
   {% endfor %}
 </ul>
+
+
+{% include tags.html %}

@@ -119,3 +119,7 @@ alert(message);
 ## Inline code
 
 This web site is maybe using `markedjs/marked`.
+
+
+
+{% include tags.html %}
