@@ -13,7 +13,7 @@ function ruleo3(in1, out1, in2, elem, inverse=false){
     if(!isNaN(in1) && !isNaN(out1) && !isNaN(in2)){
         const result = inverse ? out1 / (in2 / in1) : (out1 * in2) / in1;
         const strResult = result.toLocaleString(undefined, {maximumFractionDigits: 4});
-        document.getElementById(elem).value = strResult
+        document.getElementById(elem).value = result;
         document.getElementById('n'+elem).innerText = inverse ? '🙃' : '🆕';
         addHistory(in1, out1, in2, strResult, inverse);
     }

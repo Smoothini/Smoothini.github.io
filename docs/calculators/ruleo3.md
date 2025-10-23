@@ -33,32 +33,32 @@ The history of operations will stay until page refresh.
     </thead>
     <tbody id="propstable">
         <tr>
-            <td><input type="text" id="in1"></td>
-            <td><input type="text" id="out1"><span id="nout1"></span></td>
+            <td><input type="number" id="in1"></td>
+            <td><input type="number" id="out1"><span id="nout1"></span></td>
         </tr>
         <tr>
-            <td><input type="text" id="in2"></td>
-            <td><input type="text" id="out2"><span id="nout2"></span></td>
+            <td><input type="number" id="in2"></td>
+            <td><input type="number" id="out2"><span id="nout2"></span></td>
         </tr>
         <tr>
-            <td><input type="text" id="in3" class="multi"></td>
-            <td><input type="text" id="out3" class="multi"><span id="nout3"></span></td>
+            <td><input type="number" id="in3" class="multi"></td>
+            <td><input type="number" id="out3" class="multi"><span id="nout3"></span></td>
         </tr>
         <tr>
-            <td><input type="text" id="in4" class="multi"></td>
-            <td><input type="text" id="out4" class="multi"><span id="nout4"></span></td>
+            <td><input type="number" id="in4" class="multi"></td>
+            <td><input type="number" id="out4" class="multi"><span id="nout4"></span></td>
         </tr>
         <tr>
-            <td><input type="text" id="in5" class="multi"></td>
-            <td><input type="text" id="out5" class="multi"><span id="nout5"></span></td>
+            <td><input type="number" id="in5" class="multi"></td>
+            <td><input type="number" id="out5" class="multi"><span id="nout5"></span></td>
         </tr>
         <tr>
-            <td><input type="text" id="in6" class="multi"></td>
-            <td><input type="text" id="out6" class="multi"><span id="nout6"></span></td>
+            <td><input type="number" id="in6" class="multi"></td>
+            <td><input type="number" id="out6" class="multi"><span id="nout6"></span></td>
         </tr>
         <tr>
-            <td><input type="text" id="in7" class="multi"></td>
-            <td><input type="text" id="out7" class="multi"><span id="nout7"></span></td>
+            <td><input type="number" id="in7" class="multi"></td>
+            <td><input type="number" id="out7" class="multi"><span id="nout7"></span></td>
         </tr>
         <tr>
             <td colspan=2><button onclick="compute()" style="margin-out: 5px;">Compute</button><button onclick="reset()">Reset</button></td>
