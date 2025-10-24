@@ -3,6 +3,7 @@ title: Projects
 nav_order: 2
 layout: page
 has_children: true
+has_toc: false
 ---
 
 

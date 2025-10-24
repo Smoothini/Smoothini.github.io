@@ -4,6 +4,7 @@ nav_order: 2
 layout: page
 parent: Projects
 has_children: true
+has_toc: false
 ---
 
 # Hardware projects
