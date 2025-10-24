@@ -4,6 +4,8 @@ layout: page
 parent: Hardware projects
 tags: [hardware, bluetooth, audio]
 date: 2025-10-20
+type: Type-C Upgrade
+device: Hall Bt Sensor
 ---
 
 {% include top-card.html %}

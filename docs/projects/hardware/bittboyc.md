@@ -3,6 +3,9 @@ title: Bittboy Pocket Go Type-C Charging Mod
 layout: page
 parent: Hardware projects
 tags: [hardware, console]
+date: 2025-06-11
+type: Type-C Upgrade
+device: Bittboy Pocket Go
 ---
 
 # Type-C charging port swap for the bittboy pocket go

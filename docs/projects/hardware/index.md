@@ -17,4 +17,12 @@ has_children: true
 
 
 
+{% include ipage.html 
+  area='hardware'
+  main='type'
+  secondary='device'
+  header='mods'
+%}
+
+
 {% include tags.html %}
