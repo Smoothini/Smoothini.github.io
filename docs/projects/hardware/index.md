@@ -23,6 +23,3 @@ has_children: true
   secondary='device'
   header='mods'
 %}
-
-
-{% include tags.html %}

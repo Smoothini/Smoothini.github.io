@@ -7,6 +7,3 @@ has_children: true
 ---
 
 # Under construction 👷‍♀️🚧🏗👷‍♂️🏗🚚🚚
-
-
-{% include tags.html %}

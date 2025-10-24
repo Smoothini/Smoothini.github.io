@@ -6,6 +6,3 @@ has_children: true
 ---
 
 # Cheatsheets and various useful resources!
-
-
-{% include tags.html %}

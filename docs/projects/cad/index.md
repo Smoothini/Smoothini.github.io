@@ -90,7 +90,3 @@ M140 S0 ;Turn-off bed
 M84 X Y E ;Disable all steppers but Z
 ```
 </details>
-
-
-
-{% include tags.html %}
