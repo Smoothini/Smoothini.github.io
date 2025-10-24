@@ -1,0 +1,113 @@
+## Latest {{ include.header }}:
+
+<div>
+    {% assign sorted_posts = site.pages | sort: 'date' | reverse %}
+
+    {% assign main = include.main %}
+    {% assign secondary = include.secondary | split: ',' %}
+
+    {% assign options = main | concat: secondary %}
+    {% assign second = options[1] | strip %}
+
+    <div id="sortOptions">
+
+        <i>Sort by:</i>
+        <br />
+        {% for opt in options %}
+        <label style="margin-right: 20px">
+            <input type="radio" name="sortBy" value="{{ opt | strip }}" {% if forloop.first %}checked{% endif %}>
+            {{ opt | capitalize }}
+        </label>
+        {% endfor %}
+
+        <br />
+        <i>Order:</i><br />
+        <label id="labelAsc">
+            <input type="radio" name="sortOrder" value="asc" checked>
+        </label>
+        <label id="labelDesc" style="margin-left: 20px;">
+            <input type="radio" name="sortOrder" value="desc">
+        </label>
+
+    </div>
+
+
+
+    <ul id="itemList">
+        {% for post in sorted_posts %}
+            {% if post.path contains include.area and post[second] %}
+                <li data-{{ main }}="{{ post[main] }}"
+                {% if secondary %}
+                    {% for opt in secondary %}
+                    data-{{opt}}="{{ post[opt] | downcase }}"
+                    {% endfor %}
+                {% endif %}
+                    >
+                    <a href="{{ post.url }}">
+                        {{ post[main]}} 
+                        {% if secondary %}
+                        ➝
+                            {% for sec in secondary %}
+                                {{post[sec]}} {% unless forloop.last %}, {% endunless %}
+                            {% endfor %}
+                        {% endif %}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        function updateOrderLabels(sortField) {
+            const labelAsc = document.getElementById('labelAsc');
+            const labelDesc = document.getElementById('labelDesc');
+
+            const ascInput = labelAsc.querySelector('input');
+            const descInput = labelDesc.querySelector('input');
+
+            const ascText = labelAsc.querySelector('span') || document.createElement('span');
+            const descText = labelDesc.querySelector('span') || document.createElement('span');
+
+            ascText.textContent = (sortField === 'date') ? ' Newest first' : ' A → Z';
+            descText.textContent = (sortField === 'date') ? ' Oldest first' : ' Z → A';
+
+            if (!ascText.parentNode) labelAsc.appendChild(ascText);
+            if (!descText.parentNode) labelDesc.appendChild(descText);
+        }
+
+
+        function sortList() {
+            const sortField = document.querySelector('input[name="sortBy"]:checked').value;
+            let sortOrder = document.querySelector('input[name="sortOrder"]:checked').value;
+
+            updateOrderLabels(sortField);
+
+            const list = document.getElementById('itemList');
+            const items = Array.from(list.querySelectorAll('li'));
+
+
+            if (sortField === 'date') {
+                sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+            }
+console.log(sortField);
+            items.sort((a, b) => {
+                let A = a.dataset[sortField];
+                let B = b.dataset[sortField];
+                if (A < B) return sortOrder === 'asc' ? -1 : 1;
+                if (A > B) return sortOrder === 'asc' ? 1 : -1;
+                return 0;
+            });
+
+            items.forEach(item => list.appendChild(item));
+        }
+
+        document.querySelectorAll('input[name="sortOrder"], input[name="sortBy"]').forEach(el => {
+            el.addEventListener('change', sortList);
+        });
+
+
+        sortList();
+    });
+</script>
