@@ -1,13 +1,13 @@
 ## Latest {{ include.header }}:
 
 <div>
-    {% assign sorted_posts = site.pages | sort: 'date' | reverse %}
-
     {% assign main = include.main %}
     {% assign secondary = include.secondary | split: ',' %}
 
     {% assign options = main | concat: secondary %}
     {% assign second = options[1] | strip %}
+
+    {% assign sorted_posts = site.pages | sort: main %}
 
     <div id="sortOptions">
 
@@ -35,7 +35,7 @@
 
     <ul id="itemList">
         {% for post in sorted_posts %}
-            {% if post.path contains include.area and post[second] %}
+            {% if post.path contains include.area and post[main] %}
                 <li data-{{ main }}="{{ post[main] }}"
                 {% if secondary %}
                     {% for opt in secondary %}
@@ -91,7 +91,7 @@
             if (sortField === 'date') {
                 sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
             }
-console.log(sortField);
+            
             items.sort((a, b) => {
                 let A = a.dataset[sortField];
                 let B = b.dataset[sortField];
@@ -103,10 +103,9 @@ console.log(sortField);
             items.forEach(item => list.appendChild(item));
         }
 
-        document.querySelectorAll('input[name="sortOrder"], input[name="sortBy"]').forEach(el => {
+        document.querySelectorAll('input[name="sortBy"], input[name="sortOrder"]').forEach(el => {
             el.addEventListener('change', sortList);
         });
-
 
         sortList();
     });
