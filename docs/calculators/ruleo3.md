@@ -3,7 +3,8 @@ title: Multi Rule of 3
 layout: page
 parent: Calculators and utilities
 tags: [maths, proportions]
-date: 18-10-2025
+date: 2025-10-18
+area: Maths
 ---
 {% include top-card.html %}
 

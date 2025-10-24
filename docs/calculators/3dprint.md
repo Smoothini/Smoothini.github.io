@@ -3,7 +3,8 @@ title: 3D Print Pricing
 layout: page
 parent: Calculators and utilities
 tags: [3d printing, 3d, modeling]
-date: 02-09-2025
+date: 2025-09-02
+area: CAD
 ---
 {% include top-card.html %}
 

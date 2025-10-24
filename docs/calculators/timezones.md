@@ -3,7 +3,8 @@ title: Timezone Converter
 layout: page
 parent: Calculators and utilities
 tags: [timezone, converter]
-date: 21-07-2025
+date: 2025-07-21
+area: Time
 ---
 {% include top-card.html %}
 

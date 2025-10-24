@@ -3,7 +3,8 @@ title: Walking calculator
 layout: page
 parent: Calculators and utilities
 tags: [calculator, training, walking]
-date: 23-05-2025
+date: 2025-05-23
+area: Health
 ---
 {% include top-card.html %}
 
