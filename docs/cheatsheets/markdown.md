@@ -3,9 +3,10 @@ title: Markdown
 layout: page
 parent: Cheatsheets and resources
 has_children: true
-date: 27-06-2025
+date: 2025-06-27
 subject: Markdown Live Preview
 source: https://markdownlivepreview.com/
+area: Programming
 ---
 
 {% include top-card.html %}

@@ -9,7 +9,7 @@ has_children: true
 
 {% include ipage.html 
   area='cheatsheets'
-  main='date'
-  secondary='title'
+  main='area'
+  secondary='subject'
   header='resources'
 %}
