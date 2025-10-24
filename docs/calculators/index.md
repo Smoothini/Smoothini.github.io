@@ -6,3 +6,10 @@ has_children: true
 ---
 
 # On the fly calculators and utilities
+
+{% include ipage.html 
+  area='calculators'
+  main='date'
+  secondary='subject'
+  header='posts'
+%}
