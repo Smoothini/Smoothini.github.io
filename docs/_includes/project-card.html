@@ -39,6 +39,9 @@
     {% else %}
       <em>No source URL provided</em>
     {% endif %} ✨✨✨
+    {% if include.release %}
+      <a href="{{ include.release }}" target="_blank" rel="noopener noreferrer">Live Version Here</a>
+    ✨✨✨{% endif %} 
   </p>
 
   {% if include.source_readme %}

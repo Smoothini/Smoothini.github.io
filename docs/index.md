@@ -21,10 +21,7 @@ Tech logs, thoughts, how-tos, and whatever I feel like writing about. Maybe also
 ### [📐 CAD Designs](projects/cad/)
 Parametric designs I made, almost all of them in [OpenSCAD](https://openscad.org/). I don't know, there's just something about writing code to generate 3D models.
 
-### [🛠️ Other stuff](projects/other/)
-Projects that don’t fit elsewhere - calculators, notes, and utilities.
-
-### [🧮 Calculators](calculators/)
+### [🛠️ Calculators](calculators/)
 Small in-site utilities.
 
 ### [🧮 Resources/cheatsheets/references](cheatsheets/)
@@ -33,6 +30,8 @@ Useful resources and various cheatsheets.
 <!--
 ## 📌 Useful Pages
 
+### [ Other stuff](projects/other/)
+Projects that don’t fit elsewhere - calculators, notes, and utilities.
 - [All Projects](/projects/)
 - [Setup Notes](/notes/setup/)
 - [My Resume](/resume/) *(optional)*
