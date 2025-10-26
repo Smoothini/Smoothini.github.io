@@ -25,11 +25,21 @@
 </style>
 
 <div class="project-card">
+
+  {% if include.problem %}
   <h3>😒 Problem:</h3>
   <p>{{ include.problem | markdownify }}</p>
-
+  {% endif %}
+  
+  {% if include.solution %}
   <h3>🤑 Solution:</h3>
   <p>{{ include.solution | markdownify }}</p>
+  {% endif %}
+
+  {% if include.about %}
+  <h3>ℹ About:</h3>
+  <p>{{ include.about | markdownify }}</p>
+  {% endif %}
 
 
   <h3>🔢 Source:</h3>
